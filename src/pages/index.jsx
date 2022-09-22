@@ -14,23 +14,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Pocket - Invest at the perfect time.</title>
+        <title>viiiiis</title>
         <meta
           name="description"
-          content="By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses."
+          content="viiiiis, fundation, donation, donaciones, fundaciones, non profit"
         />
       </Head>
-      <Header />
       <main>
         <Hero />
-        <PrimaryFeatures />
-        <SecondaryFeatures />
-        <CallToAction />
-        <Reviews />
-        <Pricing />
-        <Faqs />
       </main>
-      <Footer />
     </>
   )
 }

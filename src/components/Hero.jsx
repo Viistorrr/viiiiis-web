@@ -47,8 +47,8 @@ function BackgroundIllustration(props) {
             y2="1025"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#06b6d4" />
-            <stop offset="1" stopColor="#06b6d4" stopOpacity="0" />
+            <stop stopColor="#0369a1" />
+            <stop offset="1" stopColor="#0369a1" stopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>
@@ -77,8 +77,8 @@ function BackgroundIllustration(props) {
             y2="913"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#06b6d4" />
-            <stop offset="1" stopColor="#06b6d4" stopOpacity="0" />
+            <stop stopColor="#0369a1" />
+            <stop offset="1" stopColor="#0369a1" stopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>
@@ -210,7 +210,7 @@ function Chart({
         strokeLinejoin="round"
         initial={{ pathLength: 0 }}
         transition={{ duration: 1 }}
-        {...(isInView ? { stroke: '#06b6d4', animate: { pathLength: 1 } } : {})}
+        {...(isInView ? { stroke: '#0369a1', animate: { pathLength: 1 } } : {})}
         onUpdate={({ pathLength }) => {
           pathWidth.set(
             pathRef.current.getPointAtLength(
@@ -227,7 +227,7 @@ function Chart({
             y1={points[activePointIndex].y}
             x2={totalWidth}
             y2={points[activePointIndex].y}
-            stroke="#06b6d4"
+            stroke="#0369a1"
             strokeDasharray="1 3"
           />
           <circle
@@ -236,7 +236,7 @@ function Chart({
             cy={points[activePointIndex].y}
             fill="#fff"
             strokeWidth="2"
-            stroke="#06b6d4"
+            stroke="#0369a1"
           />
         </>
       )}
@@ -283,7 +283,7 @@ function AppDemo() {
                 <div
                   className={clsx(
                     'ml-auto text-sm tabular-nums tracking-tight',
-                    percentageChange >= 0 ? 'text-cyan-500' : 'text-gray-500'
+                    percentageChange >= 0 ? 'text-sky-500' : 'text-gray-500'
                   )}
                 >
                   {`${
@@ -295,7 +295,7 @@ function AppDemo() {
             <div className="mt-6 flex gap-4 text-xs text-gray-500">
               <div>1D</div>
               <div>5D</div>
-              <div className="font-semibold text-cyan-600">1M</div>
+              <div className="font-semibold text-sky-600">1M</div>
               <div>6M</div>
               <div>1Y</div>
               <div>5Y</div>
@@ -310,7 +310,7 @@ function AppDemo() {
                 onChangeActivePointIndex={setActivePointIndex}
               />
             </div>
-            <div className="mt-4 rounded-lg bg-cyan-500 py-2 px-4 text-center text-sm font-semibold text-white">
+            <div className="mt-4 rounded-lg bg-sky-500 py-2 px-4 text-center text-sm font-semibold text-white">
               Trade
             </div>
             <div className="mt-3 divide-y divide-gray-100 text-sm">
@@ -341,35 +341,38 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-              Invest at the perfect time.
+              viiiiis en el 2023
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              By leveraging insights from our network of industry insiders,
-              you’ll know exactly when to buy to maximize profit, and exactly
-              when to sell to avoid painful losses.
+              Nuestra meta para éste año es llegar a aproximadamente 5.000 niños
+              y 250 perros y gatos a través de 10 fundaciones
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
-              <AppStoreLink />
               <Button
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 variant="outline"
               >
                 <PlayIcon className="h-6 w-6 flex-none" />
-                <span className="ml-2.5">Watch the video</span>
+                <span className="ml-2.5">Soy empresa</span>
+              </Button>
+              <Button
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                variant="outline"
+              >
+                <PlayIcon className="h-6 w-6 flex-none" />
+                <span className="ml-2.5">Soy fundación</span>
               </Button>
             </div>
           </div>
           <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
             <BackgroundIllustration className="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
-            <div className="-mx-4 h-[448px] px-9 [mask-image:linear-gradient(to_bottom,white_60%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-10 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32">
-              <PhoneFrame className="mx-auto max-w-[366px]" priority>
-                <AppDemo />
-              </PhoneFrame>
+            <div className="w-full">
+              <h1>ddadds</h1>
             </div>
           </div>
           <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
-            <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">
-              As featured in
+            <p className="text-center text-sm font-semibold italic text-gray-900 lg:text-left">
+              Empresas que ya se han unido a viiiiis
             </p>
             <ul
               role="list"
