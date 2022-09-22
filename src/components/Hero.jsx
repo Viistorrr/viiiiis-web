@@ -8,6 +8,7 @@ import { AppStoreLink } from '@components/AppStoreLink'
 import { Button } from '@components/Button'
 import { Container } from '@components/Container'
 import { PhoneFrame } from '@components/PhoneFrame'
+import { LineChart, Tooltip, CartesianGrid, Line, XAxis } from 'recharts'
 import logoBbc from '@images/logos/bbc.svg'
 import logoCbs from '@images/logos/cbs.svg'
 import logoCnn from '@images/logos/cnn.svg'
@@ -16,7 +17,60 @@ import logoForbes from '@images/logos/forbes.svg'
 import logoHuffpost from '@images/logos/huffpost.svg'
 import logoTechcrunch from '@images/logos/techcrunch.svg'
 import logoWired from '@images/logos/wired.svg'
+import React, { PureComponent } from 'react'
+import {
+  BarChart,
+  Bar,
+  Cell,
+  YAxis,
+  Legend,
+  ResponsiveContainer,
+} from 'recharts'
 
+const data = [
+  {
+    name: 'Page A',
+    uv: 4000,
+    pv: 2400,
+    amt: 2400,
+  },
+  {
+    name: 'Page B',
+    uv: 3000,
+    pv: 1398,
+    amt: 2210,
+  },
+  {
+    name: 'Page C',
+    uv: 2000,
+    pv: 9800,
+    amt: 2290,
+  },
+  {
+    name: 'Page D',
+    uv: 2780,
+    pv: 3908,
+    amt: 2000,
+  },
+  {
+    name: 'Page E',
+    uv: 1890,
+    pv: 4800,
+    amt: 2181,
+  },
+  {
+    name: 'Page F',
+    uv: 2390,
+    pv: 3800,
+    amt: 2500,
+  },
+  {
+    name: 'Page G',
+    uv: 3490,
+    pv: 4300,
+    amt: 2100,
+  },
+]
 function BackgroundIllustration(props) {
   let id = useId()
 
@@ -367,7 +421,28 @@ export function Hero() {
           <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
             <BackgroundIllustration className="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
             <div className="w-full">
-              <h1>ddadds</h1>
+              <BarChart
+                width={500}
+                height={300}
+                data={data}
+                margin={{
+                  top: 20,
+                  right: 30,
+                  left: 20,
+                  bottom: 5,
+                }}
+              >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="name" />
+                <YAxis yAxisId="left" orientation="left" stroke="#8884d8" />
+                <YAxis yAxisId="right" orientation="right" stroke="#82ca9d" />
+                <YAxis yAxisId="right" orientation="right" stroke="#000" />
+                <Tooltip />
+                <Legend />
+                <Bar yAxisId="left" dataKey="pv" fill="#8884d8" />
+                <Bar yAxisId="right" dataKey="uv" fill="#82ca9d" />
+                <Bar yAxisId="right" dataKey="uv" fill="#000" />
+              </BarChart>
             </div>
           </div>
           <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
