@@ -77,7 +77,7 @@ const Chart = (): JSX.Element => {
         <Bar
           dataKey="total"
           barSize={70}
-          fill="#8884d8"
+          fill="#fef08a"
           label={renderCustomBarLabel}
         />
       </BarChart>
