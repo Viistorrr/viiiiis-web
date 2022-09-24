@@ -1,12 +1,8 @@
-import { useId, useRef, useState } from 'react'
 import dynamic from 'next/dynamic'
 import Image from 'next/future/image'
 import clsx from 'clsx'
-import { motion, useInView, useMotionValue } from 'framer-motion'
-import { AppScreen } from '@components/AppScreen'
 import { Button } from '@components/Button'
 import { Container } from '@components/Container'
-import Chart from '@components/Chart'
 import logoBbc from '@images/logos/bbc.svg'
 import logoCbs from '@images/logos/cbs.svg'
 import logoCnn from '@images/logos/cnn.svg'
@@ -15,21 +11,8 @@ import logoForbes from '@images/logos/forbes.svg'
 import logoHuffpost from '@images/logos/huffpost.svg'
 import logoTechcrunch from '@images/logos/techcrunch.svg'
 import logoWired from '@images/logos/wired.svg'
-import React, { PureComponent } from 'react'
 
 const DynamicChart = dynamic(() => import('@components/Chart'), { ssr: false })
-
-const renderCustomBarLabel = ({ payload, x, y, width, height, value }) => {
-  return (
-    <text
-      x={x + width / 2}
-      y={y}
-      fill="#666"
-      textAnchor="middle"
-      dy={-6}
-    >{`value: ${value}`}</text>
-  )
-}
 
 export function Hero() {
   return (
@@ -44,19 +27,13 @@ export function Hero() {
               Nuestra meta para éste año es llegar a aproximadamente 5.000 niños
               y 250 perros y gatos a través de 10 fundaciones
             </p>
-            cd /
+
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
-              <Button
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                variant="outline"
-              >
-                <span className="ml-2.5">Soy empresa</span>
+              <Button href="/empresas" variant="outline">
+                <span className="ml-2.5">SOY EMPRESA</span>
               </Button>
-              <Button
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                variant="outline"
-              >
-                <span className="ml-2.5">Soy fundación</span>
+              <Button href="/fundaciones" variant="outline">
+                <span className="ml-2.5">SOY FUNDACIÓN</span>
               </Button>
             </div>
           </div>
