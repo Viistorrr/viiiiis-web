@@ -44,6 +44,7 @@ export function Hero() {
               Nuestra meta para éste año es llegar a aproximadamente 5.000 niños
               y 250 perros y gatos a través de 10 fundaciones
             </p>
+            cd /
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <Button
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
