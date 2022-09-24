@@ -1,5 +1,5 @@
 import { useId } from 'react'
-import { UserGroupIcon } from '@heroicons/react/24/solid'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faChildren,
@@ -7,7 +7,7 @@ import {
   faHouseUser,
 } from '@fortawesome/free-solid-svg-icons'
 
-import { XAxis, BarChart, Bar, YAxis } from 'recharts'
+import { XAxis, BarChart, Bar, YAxis, ResponsiveContainer } from 'recharts'
 
 const dummyData = [
   {
@@ -71,16 +71,18 @@ const Chart = (): JSX.Element => {
   return (
     <>
       <h1>2023 Progress</h1>
-      <BarChart width={600} height={400} data={dummyData}>
-        <XAxis dataKey="name" tick={renderCustomAxisTick} />
-        <YAxis />
-        <Bar
-          dataKey="total"
-          barSize={70}
-          fill="#fef08a"
-          label={renderCustomBarLabel}
-        />
-      </BarChart>
+      <ResponsiveContainer width="100%" height={300}>
+        <BarChart width={600} height={400} data={dummyData}>
+          <XAxis dataKey="name" tick={renderCustomAxisTick} />
+          <YAxis />
+          <Bar
+            dataKey="total"
+            barSize={70}
+            fill="#fef08a"
+            label={renderCustomBarLabel}
+          />
+        </BarChart>
+      </ResponsiveContainer>
     </>
   )
 }
