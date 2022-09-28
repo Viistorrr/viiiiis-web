@@ -3,7 +3,7 @@ import { AuthLayout } from '@components/AuthLayout'
 import { Button } from '@components/Button'
 import { SelectField, TextField } from '@components/Fields'
 
-export default function Register(): JSX.Element {
+export default function Register() {
   return (
     <>
       <Head>
