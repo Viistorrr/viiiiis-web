@@ -1,5 +1,3 @@
-import { useId } from 'react'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faChildren,
@@ -12,15 +10,11 @@ import { XAxis, BarChart, Bar, YAxis, ResponsiveContainer } from 'recharts'
 const dummyData = [
   {
     name: 'Niños',
-    total: 100,
+    total: 2000,
   },
   {
     name: 'Perros y Gatos',
-    total: 120,
-  },
-  {
-    name: 'Fundaciones',
-    total: 10,
+    total: 500,
   },
 ]
 
@@ -45,8 +39,8 @@ const renderCustomAxisTick = ({ x, y, payload }: any) => {
     <svg
       x={x - 12}
       y={y + 4}
-      width={24}
-      height={24}
+      width={25}
+      height={25}
       viewBox="0 0 1024 1024"
       fill="#666"
     >
@@ -60,24 +54,23 @@ const renderCustomBarLabel = ({ payload, x, y, width, height, value }: any) => {
     <text
       x={x + width / 2}
       y={y}
-      fill="#666"
+      fill="#888"
       textAnchor="middle"
-      dy={-6}
-    >{`value: ${value}`}</text>
+      dy={24}
+    >{`${value}`}</text>
   )
 }
 
 const Chart = (): JSX.Element => {
   return (
     <>
-      <h1>2023 Progress</h1>
-      <ResponsiveContainer width="100%" height={300}>
-        <BarChart width={600} height={400} data={dummyData}>
+      <ResponsiveContainer width="100%" height={500}>
+        <BarChart width={700} height={500} data={dummyData}>
           <XAxis dataKey="name" tick={renderCustomAxisTick} />
           <YAxis />
           <Bar
             dataKey="total"
-            barSize={70}
+            barSize={100}
             fill="#fef08a"
             label={renderCustomBarLabel}
           />

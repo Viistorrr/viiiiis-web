@@ -16,7 +16,7 @@ const DynamicChart = dynamic(() => import('@components/Chart'), { ssr: false })
 
 export function Hero() {
   return (
-    <div className="overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36">
+    <div className="overflow-hidden sm:py-32 lg:pb-32">
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
@@ -24,28 +24,29 @@ export function Hero() {
               viiiiis en el 2023
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              Nuestra meta para éste año es llegar a aproximadamente 5.000 niños
-              y 250 perros y gatos a través de 10 fundaciones
+              Es simple, queremos impactar aproximadamente 3.000 niños y 500
+              perros y gatos en situación de calle o vulnerabilidad en el 2023.
             </p>
-
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
+            <div className="mt-4 flex flex-col">
+              <i> - ¿será posible?</i>
+              <br />
+              <i> - Pues ya lo veremos! 😁✌🏾</i>
+            </div>
+            <div className="m-4 flex flex-wrap gap-4">
               <Button href="/empresas" variant="outline">
-                <span className="ml-2.5">SOY EMPRESA</span>
+                <span className="m-2">SOY EMPRESA</span>
               </Button>
               <Button href="/fundaciones" variant="outline">
-                <span className="ml-2.5">SOY FUNDACIÓN</span>
+                <span className="m-2">SOY FUNDACIÓN</span>
               </Button>
             </div>
           </div>
-          <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
+          <div className="relative mt-12 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
             <div className="w-full">
               <DynamicChart />
             </div>
           </div>
           <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
-            <p className="text-center text-sm font-semibold italic text-gray-900 lg:text-left">
-              Empresas que ya se han unido a viiiiis
-            </p>
             <ul
               role="list"
               className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start"
