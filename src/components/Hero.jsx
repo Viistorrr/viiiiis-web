@@ -16,7 +16,7 @@ const DynamicChart = dynamic(() => import('@components/Chart'), { ssr: false })
 
 export function Hero() {
   return (
-    <div className="overflow-hidden sm:py-32 lg:pb-32">
+    <div className="overflow-hidden">
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
@@ -24,13 +24,16 @@ export function Hero() {
               viiiiis en el 2023
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              Es simple, queremos impactar aproximadamente 3.000 niños y 500
-              perros y gatos en situación de calle o vulnerabilidad en el 2023.
+              Es simple, nuetra meta es ayudar directamente{' '}
+              <b>
+                <i>3.000 niños, 500 animales entre perros y gatos</i>
+              </b>{' '}
+              en situación de calle o vulnerabilidad en el 2023.
             </p>
             <div className="mt-4 flex flex-col">
-              <i> - ¿será posible?</i>
+              <i>¿será posible?</i>
               <br />
-              <i> - Pues ya lo veremos! 😁✌🏾</i>
+              <i>Pues ya lo veremos! 😁✌🏾</i>
             </div>
             <div className="m-4 flex flex-wrap gap-4">
               <Button href="/empresas" variant="outline">

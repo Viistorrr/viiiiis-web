@@ -10,7 +10,7 @@ import { XAxis, BarChart, Bar, YAxis, ResponsiveContainer } from 'recharts'
 const dummyData = [
   {
     name: 'Niños',
-    total: 2000,
+    total: 3000,
   },
   {
     name: 'Perros y Gatos',
