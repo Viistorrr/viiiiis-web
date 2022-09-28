@@ -36,10 +36,10 @@ export function Hero() {
               <i>Pues ya lo veremos! 😁✌🏾</i>
             </div>
             <div className="m-4 flex flex-wrap gap-4">
-              <Button href="/empresas" variant="outline">
+              <Button href="/contact" variant="outline">
                 <span className="m-2">SOY EMPRESA</span>
               </Button>
-              <Button href="/fundaciones" variant="outline">
+              <Button href="/contact" variant="outline">
                 <span className="m-2">SOY FUNDACIÓN</span>
               </Button>
             </div>
