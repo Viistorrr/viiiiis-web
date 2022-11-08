@@ -5,15 +5,14 @@ const DynamicChart = dynamic(() => import('@components/Chart'), { ssr: false })
 export function Hero() {
   return (
     <div className="overflow-hidden">
-      {/* Hero card */}
-      <div className="relative">
+      <div className="relative w-full">
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="mx-auto w-full sm:px-6 lg:px-8">
           <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
             <div className="absolute inset-0">
               <img
                 className="h-full w-full object-cover"
-                src="/assets/imgs/hero/kids.jpg"
+                src="/assets/imgs/home/kids.jpg"
                 alt="People working on laptops"
               />
               <div className="absolute inset-0 bg-yellow-200 mix-blend-multiply" />
@@ -21,14 +20,13 @@ export function Hero() {
             <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
               <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
                 <span className="block text-3xl text-white">
-                  Lo que haces por otros, no es más que una semilla que siembras
-                  en tu propia vida
+                  Lo que haces por otros, es una semilla que siembras en tu
+                  propia vida
                 </span>
               </h1>
               <p className="mx-auto mt-6 max-w-lg text-center text-xl text-yellow-200 sm:max-w-3xl">
-                Ayudamos a conectar empresas que quieren contribuir y apoyar a
-                proyectos sociales y/o fundaciones de la ciudad de Medellín sin
-                que sea un proceso tedioso o poco confiable para ellas
+                ¡Bienvenido! Somos viiiis, una comunidad que sueña hacer visible
+                lo pequeño y significativo lo que no creemos que es.
               </p>
               <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                 <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">

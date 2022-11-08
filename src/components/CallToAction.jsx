@@ -1,31 +1,45 @@
-import { AppStoreLink } from '@components/AppStoreLink'
 import { CircleBackground } from '@components/CircleBackground'
-import { Container } from '@components/Container'
 
 export function CallToAction() {
   return (
-    <section
-      id="get-free-shares-today"
-      className="relative overflow-hidden bg-gray-900 py-20 sm:py-28"
-    >
-      <div className="absolute top-1/2 left-20 -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2">
-        <CircleBackground color="#fff" className="animate-spin-slower" />
+    <div className="relative m-8 rounded-2xl bg-yellow-800 lg:px-8">
+      <div className="h-56 rounded-2xl bg-yellow-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+        <img
+          className="h-full w-full rounded-2xl object-cover "
+          src="/assets/imgs/home/hands.jpg"
+          alt=""
+        />
       </div>
-      <Container className="relative">
-        <div className="mx-auto max-w-md sm:text-center">
-          <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
-            Get your first tips today
+      <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="md:ml-auto md:w-1/2 md:pl-10">
+          <h2 className="text-lg font-semibold text-gray-300">
+            Award winning support
           </h2>
-          <p className="mt-4 text-lg text-gray-300">
-            It takes 30 seconds to sign up. Download the app and create an
-            account today and we’ll send you a tip guaranteed to double your
-            first investment.
+          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            We’re here to help
           </p>
-          <div className="mt-8 flex justify-center">
-            <AppStoreLink color="white" />
+          <p className="mt-3 text-lg text-gray-300">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
+            tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim
+            et fermentum, augue. Aliquet amet volutpat quisque ut interdum
+            tincidunt duis.
+          </p>
+          <div className="mt-8">
+            <div className="inline-flex rounded-md shadow">
+              <a
+                href="#"
+                className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-gray-900 hover:bg-gray-50"
+              >
+                Visit the help center
+                <CircleBackground
+                  className="-mr-1 ml-3 h-5 w-5 text-gray-400"
+                  aria-hidden="true"
+                />
+              </a>
+            </div>
           </div>
         </div>
-      </Container>
-    </section>
+      </div>
+    </div>
   )
 }
