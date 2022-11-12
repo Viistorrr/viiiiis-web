@@ -2,8 +2,8 @@ import Head from 'next/head'
 import { Hero } from '@components/Hero'
 import { Reviews } from '@components/Reviews'
 import { Header } from '@components/Header'
-import { Pricing } from '../components/Pricing'
 import { CallToAction } from '@components/CallToAction'
+import { Stats } from '@components/Stats'
 
 export default function Home() {
   return (
@@ -19,6 +19,7 @@ export default function Home() {
         <Header />
         <Hero />
         <CallToAction />
+        <Stats />
         <Reviews />
       </main>
     </>

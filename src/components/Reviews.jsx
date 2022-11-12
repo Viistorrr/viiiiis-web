@@ -242,7 +242,7 @@ export function Reviews() {
     <section
       id="reviews"
       aria-labelledby="reviews-title"
-      className=" pb-16 sm:pb-24"
+      className=" pb-16 pt-16 sm:pb-24"
     >
       <Container>
         <h2
@@ -251,7 +251,10 @@ export function Reviews() {
         >
           <i>Reviews 2022</i>
         </h2>
-        <p className="mt-2 text-lg text-gray-600 sm:text-center"></p>
+        <p className="mt-2 text-lg text-gray-600 sm:text-center">
+          Estos son algunos de los comentarios que hemos recibido en las
+          jornadas del 2022
+        </p>
         <ReviewGrid />
       </Container>
     </section>

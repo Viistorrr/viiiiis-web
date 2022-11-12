@@ -3,7 +3,7 @@ import Script from 'next/script'
 
 export default function Document() {
   return (
-    <Html className="h-full bg-gray-50 antialiased" lang="en">
+    <Html className="scroll-smooth bg-gray-50 antialiased" lang="en">
       <Head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-T9VG4H5QQ6"
@@ -19,7 +19,7 @@ export default function Document() {
       `}
         </Script>
       </Head>
-      <body className="flex h-full flex-col">
+      <body>
         <Main />
         <NextScript />
       </body>

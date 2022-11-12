@@ -5,7 +5,10 @@ import { AnimatePresence, motion } from 'framer-motion'
 export function NavLinks() {
   let [hoveredIndex, setHoveredIndex] = useState(null)
 
-  return [['Reviews', '#reviews']].map(([label, href], index) => (
+  return [
+    ['Stats', '#stats'],
+    ['Reviews', '#reviews'],
+  ].map(([label, href], index) => (
     <Link
       key={label}
       href={href}
