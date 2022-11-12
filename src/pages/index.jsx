@@ -12,7 +12,7 @@ export default function Home() {
         <title>viiiiis</title>
         <meta
           name="description"
-          content="Lo que haces por otros, es una semilla que siembras en tu propia vida. Somos viiiis, una comunidad que sueña hacer visible lo pequeño y significativo lo que no creemos que es."
+          content="viiiis es una comunidad que sueña hacer visible lo pequeño y significativo lo que no creemos que es."
         />
         <meta
           name="twitter:image"
@@ -20,17 +20,21 @@ export default function Home() {
         />
         <meta
           property="og:description"
-          content="Lo que haces por otros, es una semilla que siembras en tu propia vida. Somos viiiis, una comunidad que sueña hacer visible lo pequeño y significativo lo que no creemos que es."
+          content="viiiis es una comunidad que sueña hacer visible lo pequeño y significativo lo que no creemos que es."
         />
         <meta
           property="og:image"
           content="https://www.viiiiis.com/assets/imgs/home/kids.jpg"
         />
+        <meta
+          name="twitter:title"
+          content="Lo que haces por otros, es una semilla que siembras en tu propia vida"
+        />
         <meta property="twitter:domain" content="www.viiiiis.com" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:description"
-          content="Lo que haces por otros, es una semilla que siembras en tu propia vida. Somos viiiis, una comunidad que sueña hacer visible lo pequeño y significativo lo que no creemos que es."
+          content="viiiis es una comunidad que sueña hacer visible lo pequeño y significativo lo que no creemos que es."
         />
       </Head>
       <main>
