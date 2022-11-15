@@ -1,13 +1,15 @@
 import { CircleBackground } from '@components/CircleBackground'
+import Image from 'next/image'
 
 export function CallToAction() {
   return (
     <div className="relative m-8 rounded-2xl bg-yellow-700 lg:px-8">
       <div className="h-56 rounded-2xl bg-white sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
-        <img
+        <Image
           className="h-full w-full rounded-2xl object-cover "
           src="/assets/imgs/logos/logo.png"
           alt=""
+          layout="fill"
         />
       </div>
       <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">

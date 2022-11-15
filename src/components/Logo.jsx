@@ -1,7 +1,14 @@
 import Image from 'next/image'
 
 export function Logomark(props) {
-  return <Image src="/assets/imgs/logos/logo.png" alt="viiiiis" {...props} />
+  return (
+    <Image
+      src="/assets/imgs/logos/logo.png"
+      alt="viiiiis"
+      {...props}
+      layout="fixed"
+    />
+  )
 }
 
 export function Logo(props) {
