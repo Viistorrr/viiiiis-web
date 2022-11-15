@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>viiiiis</title>
+        <title>viiiiis 🙂</title>
         <meta
           name="description"
           content="viiiis es una comunidad que sueña hacer visible lo pequeño y significativo lo que no creemos que es."

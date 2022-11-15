@@ -2,17 +2,17 @@ import { CircleBackground } from '@components/CircleBackground'
 
 export function CallToAction() {
   return (
-    <div className="relative m-8 rounded-2xl bg-yellow-800 lg:px-8">
-      <div className="h-56 rounded-2xl bg-yellow-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+    <div className="relative m-8 rounded-2xl bg-yellow-700 lg:px-8">
+      <div className="h-56 rounded-2xl bg-white sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
         <img
           className="h-full w-full rounded-2xl object-cover "
-          src="/assets/imgs/home/hands.jpg"
+          src="/assets/imgs/logos/logo.png"
           alt=""
         />
       </div>
       <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="md:ml-auto md:w-1/2 md:pl-10">
-          <h2 className="text-lg font-semibold text-gray-300">viiiiisApp</h2>
+          <h2 className="text-lg font-semibold text-gray-300">viiiiis 🙂</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Gracias por querer sumarte
           </p>
