@@ -4,6 +4,7 @@ import { Reviews } from '@components/Reviews'
 import { Header } from '@components/Header'
 import { CallToAction } from '@components/CallToAction'
 import { Stats } from '@components/Stats'
+import { Footer } from '../components/Footer'
 
 export default function Home() {
   return (
@@ -43,6 +44,7 @@ export default function Home() {
         <CallToAction />
         <Stats />
         <Reviews />
+        <Footer />
       </main>
     </>
   )

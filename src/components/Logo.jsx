@@ -7,6 +7,8 @@ export function Logomark(props) {
       alt="viiiiis"
       {...props}
       layout="fixed"
+      width="140"
+      height="70"
     />
   )
 }
